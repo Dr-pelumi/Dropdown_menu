@@ -46,10 +46,10 @@ button{
    align-items: center;
    list-style: none;
    border-bottom: 1px solid white;
-   opacity: 0;
-   pointer-events: none;
-   transition: all 0.4s ease;
-   transform: translateY(10px);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: all 0.4s ease; 
+    transform: translateY(-10px); 
 }
 .projects a,
  .products a{
@@ -82,4 +82,19 @@ button{
    color: black;
    font-size: .9rem;
  }
+ .projects li a:hover,
+ .products li a:hover{
+   color: #fff; 
+   text-decoration: underline;
+   transition: all .1ms linear;
+ }
+ .products button:focus + ul,
+ .projects button:focus + ul{
+   opacity: 1;
+   pointer-events: all;
+   transform: translateY(0);
+ }
+
+ 
+
 
